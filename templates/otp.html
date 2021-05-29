@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>otp</title>
+</head>
+<body>
+<h1>otp authentication {{message}}</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" placeholder="enter otp" name="otp">
+    <input type="submit" placeholder="enter">
+</form>
+</body>
+</html>
